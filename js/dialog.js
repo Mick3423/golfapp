@@ -1,8 +1,8 @@
 export default class Dialog{
     constructor(questionText, trueButtonText, falseButtonText) {
         this.questionText = questionText || 'Er du sikker?';
-        this.trueButtonText = trueButtonText || 'ja';
-        this.falseButtonText = falseButtonText || 'nej';
+        this.trueButtonText = trueButtonText || 'Ja';
+        this.falseButtonText = falseButtonText || 'Nej';
 
 
         this.dialog = undefined;
