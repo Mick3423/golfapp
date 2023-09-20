@@ -18,3 +18,57 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+:root {
+	--primary: #04a1bf;
+	--primary-dark: #025F70;
+	--secondary: #cd4ebc;
+	--secondary-dark: #7c3271;
+	--highlight: #FFCD5D;
+	--green: #21bc44;
+	--white: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.container{
+	max-width: 500px;
+	margin:0 auto;
+}
+
+
+.dialog{
+	display: flex;
+	flex-direction:column ;
+	width: calc(100% - 20px);
+	max-width: 500px;
+	border: none;
+	border-radius: 5px;
+}
+
+.dialog-button-group button{
+	color: var(--white);
+	border: none;
+	padding: 10px 30px;
+	border-radius: 5px;
+}
+
+.dialog-button-group button:focus{
+	outline-color: var(--highlight) ;
+}
+
+.dialog-button--false{
+	outline-color: var(--primary) ;
+}
+
+
+.dialog-button--true{
+	outline-color: var(--green) ;
+}
+
+.dialog::backdrop{
+	background-color: rgba(0,0,0,0.6);
+}
